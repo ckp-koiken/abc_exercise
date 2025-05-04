@@ -12,6 +12,8 @@ int main() {
   for (int i = 1; i <= M; i++) {
     num *= N;
     X += num;
+    // Xの数は64bit整数の範囲で表現できないほど大きくなる
+    // 最大値に達した時にinfを表示して処理を打ち切る
     if (X > max) {
       cout << "inf" << endl;
       return 0;
