@@ -38,4 +38,17 @@ int main() {
   for (int i = 0; i < N; i++) {
     cout << ans.at(i) << endl;
   }
+
+  // another answer
+  // その点数よりも高い点数があるときにrを1つずつ加える
+  // 計算量に注意
+  // for (int i = 0; i < N; i++) {
+  //   for (int j = 0; j < N; j++) {
+  //     if (P.at(i) < P.at(j)) {
+  //       r++;
+  //     }
+  //   }
+  // }
+  // cout << r << endl;
+
 }
