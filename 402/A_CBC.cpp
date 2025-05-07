@@ -10,6 +10,13 @@ int main() {
     }
   }  
 
+  // another answer
+  // for (char c : S) {
+  //   if (isupper(c)) {
+  //     cout << c;
+  //   }
+  // }
+
   cout << endl;
   return 0;
 }
