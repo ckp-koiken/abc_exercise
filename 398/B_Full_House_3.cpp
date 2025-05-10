@@ -21,5 +21,25 @@ int main() {
     return 0;
   } while (next_permutation(cards.begin(), cards.end()));
   cout << "No" << endl;
+
+  // 分布を数える
+  // カードの登場頻度を数えて、
+  // それぞれ3枚2枚の組になっているかどうかを判断する
+  /*
+  int m = 13;
+  vector<int> cnt(m + 1); // 1から13個確保したいためm+1する
+  for (int x : cards) {
+    cnt.at(x)++;
+  }
+  // 逆順にソートrbegin(), rend()
+  sort(cnt.rbegin(), cnt.rend());
+
+  if (cnt.at(0) >= 3 && cnt.at(1) >= 2) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
+  */
+  
   return 0;
 }
