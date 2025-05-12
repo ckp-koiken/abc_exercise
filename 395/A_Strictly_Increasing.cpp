@@ -20,6 +20,17 @@ int main() {
   } else {
     cout << "No" << endl;
   }
+  
+  // another answer
+  // more simple
+  // 条件を満たさない時点でNoを表示してプログラムを終了
+  // for (int i = 0; i < N - 1; i++) {
+  //   if (A.at(i) >= A.at(i + 1)) {
+  //     cout << "No" << endl;
+  //     return 0;
+  //   } 
+  // }
+  // cout << "Yes" << endl;
 
   return 0;
 } 
