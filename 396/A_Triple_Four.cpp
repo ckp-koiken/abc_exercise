@@ -22,6 +22,15 @@ int main() {
     cout << "No" << endl;
   }
 
+  // another answer
+  // 3連続を見つけた時点でプログラムを終了してもよい
+  // for (int i = 0; i < N - 2; i++) {
+  //   if (A.at(i) == A.at(i + 1) && A.at(i) == A.at(i + 2)){
+  //     cout << "Yes" << endl;
+  //     return 0;
+  //   }
+  // }
+  // cout << "No" << endl;
 
   return 0;
 }
