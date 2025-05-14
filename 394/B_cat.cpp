@@ -36,6 +36,27 @@ int main() {
   }
   cout << endl;
 
-
   return 0;
 }
+
+// another answer
+// int main() {
+//   int n;
+//   cin >> n;
+//   vector<string> s(n);
+//   for (int i = 0; i < n; i++) {
+//     cin >> s.at(i);
+//   }
+//
+//   // ラムダ式で文字列の長さを比較する関数を作る。[&]で引数参照。
+//   // sortのルールを比較関数で定義
+//   // 引数2つ、デフォルトはx < yで値の大きさを比較
+//   sort(s.begin(), s.end(),
+//        [&](string x, string y) { return x.size() < y.size(); });
+//   string ans = "";
+//   for (int i = 0; i < n; i++) {
+//     ans += s.at(i);
+//   }
+//   cout << ans << endl;
+//   return 0;
+// }
