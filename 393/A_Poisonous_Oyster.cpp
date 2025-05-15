@@ -16,3 +16,18 @@ int main() {
   } 
   return 0;
 }
+
+// another (proper) answer
+  // if (S1 == "sick") {
+  //   if (S2 == "sick") {
+  //     cout << 1 << endl;
+  //   } else {
+  //     cout << 2 << endl;
+  //   }
+  // } else {
+  //   if (S2 == "sick") {
+  //     cout << 3 << endl;
+  //   } else {
+  //     cout << 4 << endl;
+  //   }
+  // }
