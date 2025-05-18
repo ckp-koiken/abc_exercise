@@ -7,6 +7,9 @@ int main() {
   int length = S.size();
   int ans = 0;
 
+  // 文字列をi, j, kごとに全探索
+  // iとjとkはそれぞれ1文字ずつ開始位置をずらす
+  // ずらさないとjとkがiよりも後ろを探してしまうことがある
   for (int i = 0; i < length; i++) {
     for (int j = i + 1; j < length; j++) {
       for (int k = j + 1; k < length; k++) {
