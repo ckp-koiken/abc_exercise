@@ -31,3 +31,28 @@ int main() {
 
   return 0;
 }
+
+// another answer
+  // 1からNまで順に見て、配列Aの数に該当するかどうかを判断
+  // 該当しなければ配列ansに追加
+  // int N, M;
+  // cin >> N >> M;
+  // vector<int> A(M);
+  // for (int i = 0; i < M; i++) {
+  //   cin >> A.at(i);
+  // }
+
+  // vector<int> ans;
+  // for (int i = 1; i <= N; i++) {
+  //   bool exist = false;
+  //   for (int na : A) {
+  //     if (na == i) {
+  //       exist = true;
+  //     }
+  //   }
+  //   if (!exist) ans.push_back(i);
+  // }
+
+  // cout << ans.size() << endl;
+  // for (int x : ans) cout << x << ' ';
+  // cout << endl;
