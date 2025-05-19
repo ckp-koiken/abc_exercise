@@ -16,3 +16,19 @@ int main() {
 
   return 0;
 }
+
+// another answer
+  // Dを1文字ずつ反転させる
+  // string ans = "";
+  // for (char d : D) {
+  //   if (d == 'N') {
+  //     ans += 'S';
+  //   } else if (d == 'S') {
+  //     ans += 'N';
+  //   } else if (d == 'E') {
+  //     ans += 'W';
+  //   } else if (d == 'W') {
+  //     ans += 'E';
+  //   }
+  // }
+  // cout << ans << endl;
