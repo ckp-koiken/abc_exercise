@@ -26,8 +26,20 @@ int main() {
       cout << "Yes" << endl;
       return 0;
     }
+
   }
 
   cout << "No" << endl;
   return 0;
 }
+
+// another answer
+  // 確認用のベクタを最初に作っておいて
+  // 直接bと比較してもよい
+
+  // vector<int> ans = {1, 2, 3, 4, 5};
+
+  //   if (b == ans) {
+  //     cout << "Yes" << endl;
+  //     return 0;
+  //   }
