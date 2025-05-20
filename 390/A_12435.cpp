@@ -39,6 +39,9 @@ int main() {
 
   // vector<int> ans = {1, 2, 3, 4, 5};
 
+  // 入れ替えはstdに実装されているのでわざわざ自分で書かなくても良い
+  // swap(b.at(i) , b.at(i + 1));
+
   //   if (b == ans) {
   //     cout << "Yes" << endl;
   //     return 0;
