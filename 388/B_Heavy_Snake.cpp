@@ -10,9 +10,12 @@ int main() {
     cin >> T.at(i) >> L.at(i);
   }
 
+  // kを1から順に増やす
   for (int k = 1; k <= D; k++) {
     int ans = 0;
     for (int i = 0; i < N; i++) {
+      // 重量の計算結果を順次max()で比較していって
+      // 大きい方をansに入れる
       ans = max(ans, T.at(i) * (L.at(i) + k));
     }
     cout << ans << endl;
