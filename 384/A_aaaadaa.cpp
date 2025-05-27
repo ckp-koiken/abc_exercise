@@ -14,3 +14,12 @@ int main() {
   cout << S << endl;
   return 0;
 }
+
+// another answer
+  // Sを一文字ずつ見て、c1ならtにc1を連結
+  // c1でないならtにc2を連結する
+  // string t = "";
+  // for (char c : S) {
+  //   t += c == c1 ? c1 : c2;
+  // }
+  // cout << t << endl;
