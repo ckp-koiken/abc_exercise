@@ -24,6 +24,15 @@ int main() {
     return 0;
   }
 
+  // another answer
+  // int time_d = 60 * A + B;
+  // int time_s = 60 * C + D;
+  // if (time_d > time_s) {
+  //   cout << "Yes" << endl;
+  // } else {
+  //   cout << "No" << endl;
+  // }
 
   return 0;
+
 }
