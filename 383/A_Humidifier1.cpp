@@ -24,3 +24,18 @@ int main() {
   cout << w << endl;
   return 0;
 }
+
+// another answer
+// tとvの配列を作らずに、tを直前の水追加時間nowと比べて
+// 水の残量を表現してやることでもう少し簡単にできる
+// int volume = 0;  // 水の量
+// int now = 0;  // 直前の水の追加時刻（最初は0）
+// for (int i = 0; i < N; i++) {
+//   int t, v;
+//   cin >> t >> v;
+//   // 前の水からの経過時間をtとnowで計算し、その分水の量を減らす
+//   volume -= (t - now);
+//   volume = max(volume , 0);  // 水の残量を0未満にならないように
+//   volume += v;
+//   now = t;
+// }
