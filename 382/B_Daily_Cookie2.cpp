@@ -17,6 +17,18 @@ int main() {
   }
 
   reverse(S.begin(), S.end());
+
+  // another answer
+  // D日分ループして、右端から'@'を探して'.'に置き換える
+  // for (int i = 0; i < D; i++) {
+  //   for (int j = N - 1; j >= 0; j--) {
+  //     if (S.at(j) == '@') {
+  //       S.at(j) = '.';
+  //       break;
+  //     }
+  //   }
+  // }
+
   cout << S << endl;
   return 0;
 }
