@@ -11,3 +11,10 @@ int main() {
   // cout << round(static_cast<double>(A) / B) << endl;
   return 0;
 }
+
+// another answer
+// A/Bに最も近い整数はA/B+1/2以下の最大の整数
+// つまり2A+B/2B
+// 後は整数部分以外を切り捨てる
+
+// cout << (2 * A + B) / (2 * B) << endl;
