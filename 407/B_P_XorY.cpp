@@ -15,6 +15,7 @@ int main() {
     }
   }
 
+  // setprecisionで浮動小数点を出力する精度を設定する
   cout << setprecision(10) << static_cast<double>(num) / 36.0 << endl;
   return 0;
 }
