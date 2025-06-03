@@ -19,3 +19,14 @@ int main() {
   cout << setprecision(10) << static_cast<double>(num) / 36.0 << endl;
   return 0;
 }
+
+// another answer
+// サイコロのベクタを作らなくてもintのfor文でできる
+// doubleでサイコロ作る必要全くなかった
+// for (int i = 1; i <= 6; i++) {
+//   for (int j = 1; j <= 6; j++) {
+//     int sum = i + j;
+//     int ab = abs(i - j);
+//     if (sum >= X || ab >= Y) num++;
+//   }
+// }
