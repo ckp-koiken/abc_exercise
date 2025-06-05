@@ -17,6 +17,23 @@ int main() {
       continue;
     }
   }
+
+  // another answer
+    // tに関する配列を作成して（最初だけ0）一つ先と比較する
+    // その差がSより大きければ寝てしまう
+    // T_i + S + 0.5 < T_{i+1}に寝るので
+    // T_{i+1} - T_i > Sだけ比べれば良い
+  // vector<int> t(N + 1, 0);
+  // for (int i = 1; i <= N; i++) {
+  //   cin >> t.at(i);
+  // }
+  // for (int i = 1; i <= N; i++) {
+  //   if (t.at(i) - t.at(i - 1) > S) {
+  //     cout << "No" << endl;
+  //     return 0;
+  //   }
+  // }
+
   cout << "Yes" << endl;
   return 0;
 }
