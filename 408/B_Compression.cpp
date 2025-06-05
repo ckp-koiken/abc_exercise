@@ -10,6 +10,7 @@ int main() {
   }
 
   sort(A.begin(), A.end());
+
   set<int> st;
   // まとめて以下の書き方でもいい
   // set<int> st(A.begin(), A.end());
@@ -26,3 +27,11 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// std::uniqueを使うとsetを使わず楽に書ける
+// A.erase(unique(A.begin(), A.end()), A.end());
+// cout << A.size() << endl;;
+// for (int a : A) {
+//   cout << a << " ";
+// }
