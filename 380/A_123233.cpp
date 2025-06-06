@@ -6,6 +6,16 @@ int main() {
   cin >> N;
 
   string n = to_string(N);
+
+  // another answer1
+  // ソートして122333になるかどうかで判定
+  // sort(n.begin(), n.end());
+  // if (n == "122333") {
+  //   cout << "Yes" << endl;
+  // } else {
+  //   cout << "No" << endl;
+  // }
+
   int one = 0;
   int two = 0;
   int three = 0;
