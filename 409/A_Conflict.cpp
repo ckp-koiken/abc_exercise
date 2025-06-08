@@ -11,6 +11,9 @@ int main() {
   for (int i = 0; i < N; i++) {
     cin >> A.at(i);
   }
+  // charの配列ではなく文字列として受け取った方が楽
+  // string T, A;
+  // cin >> T >> A
 
   for (int i = 0; i < N; i++) {
     if (T.at(i) == 'o' && A.at(i) == 'o') {
