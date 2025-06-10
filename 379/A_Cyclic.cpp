@@ -13,3 +13,7 @@ int main() {
   cout << b << c << a << " " << c << a << b << endl;
   return 0;
 }
+
+// another answer
+// Nを整数型として受け取って文字通り100の位、10の位、1の位を計算
+// int a = N / 100, b = (N / 10) % 10, c = N % 10;
