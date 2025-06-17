@@ -18,6 +18,8 @@ int main() {
 
   cost += sqrt(x * x + y * y);
 
+  // 普通にcoutすると誤差が大きすぎてWAになるので
+  // printfで小数点以下10桁まで表示する
   printf("%.10f\n", cost);
   return 0;
 }
