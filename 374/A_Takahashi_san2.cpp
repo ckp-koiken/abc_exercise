@@ -13,3 +13,12 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// substr(n)でn番目以降の文字列を取り出す
+// 最後の三文字だけ取り出す
+// if (S.substr(S.size() - 3) == "san") {
+//   cout << "Yes" << endl;
+// } else {
+//   cout << "No" << endl;
+// }
