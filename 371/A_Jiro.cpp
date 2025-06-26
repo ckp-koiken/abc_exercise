@@ -28,3 +28,15 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// ab != acのとき　b > a > cか c > a > bなのでaが次男
+// ab == acで、ab == bcのとき、a > b > cか c > b > aなのでbが次男
+// そうでないときはcが次男
+// if (ab != ac) {
+//   cout << "A" << endl;
+// } else if (ab == ac) {
+//   cout << "B" << endl;
+// } else {
+//   cout << "C" << endl;
+// }
