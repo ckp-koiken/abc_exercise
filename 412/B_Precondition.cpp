@@ -24,3 +24,23 @@ int main() {
   cout << "Yes" << endl;
   return 0;
 }
+
+// another answer
+// find関数を使えばTに含まれているかの判定をfor文を書かずに判定できる
+// int main() {
+//   string s, t;
+//   cin >> s >> t;
+
+//   bool res = true;
+//   for (int i = 1; i < s.size(); i++) {
+//     if (isupper(s.at(i))) {
+//       // tにs.at(i-1)の文字が含まれていなければ(string::npos)falseにする
+//       if (t.find(s.at(i - 1)) == string::npos) {
+//         res = false;
+//       }
+//     }
+//   }
+
+//   cout << (res ? "Yes" : "No") << endl;
+//   return 0;
+// }
