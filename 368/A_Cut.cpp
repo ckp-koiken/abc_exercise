@@ -22,6 +22,25 @@ int main() {
   for (int i = 0; i < N - K; i++) {
     cout << A.at(i) << " ";
   }
+
+  // another ans1
+  // 添え字を工夫する
+  // 下からK番目はN-K+1番目
+  // for (int i = N - K; i < N; i++) {
+  //   cout << A.at(i) << " ";
+  // }
+  // for (int i = 0; i < N - K; i++) {
+  //   cout << A.at(i) << " ";
+  // }
+
+  // another ans2
+  // rotate()関数を用いる
+  // rotate(first, middle, last)
+  // rorate(A.begin(), A.begin() + N - K, A.end());
+  // for (int i = 0; i < N; i++) {
+  //   cout << A.at(i) << " ";
+  // }
+
   cout << endl;
   return 0;
 }
