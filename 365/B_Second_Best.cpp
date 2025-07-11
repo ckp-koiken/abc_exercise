@@ -15,6 +15,9 @@ int main() {
   }
 
   sort(a.begin(), a.end());
+  // another answer
+  // reverseしなくてもsortして後ろから2番目をtargetにしても良い
+  // int target = a.at(N - 2);
   reverse(a.begin(), a.end());
   int target = a.at(1);
 
