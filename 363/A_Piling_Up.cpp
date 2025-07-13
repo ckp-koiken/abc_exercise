@@ -17,5 +17,9 @@ int main() {
     cout << 300 - R << endl;
   }
 
+  // another answer
+  // ^が100の倍数ごとに増えることを利用する
+  // cout << 100 - (100 % R) << endl;
+
   return 0;
 }
