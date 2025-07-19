@@ -18,11 +18,26 @@ int main() {
     cout << A.at(i) << " ";
   }
 
+  // another answer1
+  // 受け取ったものをそのまま表示し、
+  // K要素目を出力した直後にXを表示する
+  // for (int i = 0; i < N; i++) {
+  //   int a;
+  //   cin >> a;
+  //   if (i != 0) {
+  //     cout << " ";
+  //   }
+  //   cout << a;
+  //   if (i == (K - 1)) {
+  //     cout << " " << X;
+  //   }
+  // }
+
   cout << endl;
   return 0;
 }
 
-// another answer
+// another answer2
 // 実際に配列のK番目の次にXを挿入する
 // insert()を使う
 // int main (){
