@@ -21,6 +21,10 @@ int main() {
       cout << ans - 1 << endl;
       return 0;
     }
+
+    // another answer
+    // Mが0未満になるまで引き続ける
+    // if (M >= 0) ans++;
   }
   
   cout << ans << endl;
