@@ -36,4 +36,21 @@ int main() {
   }
 
   return 0;
+
+  // another answer
+  // 栄養素の量をcheck配列を使わずに判定する
+  // for (int j = 0; j < M; j++) {
+  //   // 栄養素jについて合計値を判定する
+  //   int sum = 0;
+  //   for (int i = 0; i < N; i++) {
+  //     sum += X.at(i).at(j);
+  //   }
+  //   // 1つでも合計値が必要量を超えていなければNoを表示し終了
+  //   if (sum < A.at(j)) {
+  //     cout << "No" << endl;
+  //     return 0;
+  //   }
+  // }
+  // // 全部合計値が必要量を超えていればYesを表示
+  // cout << "Yes" << endl;
 }
