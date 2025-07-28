@@ -17,4 +17,13 @@ int main() {
     }
   }
   return 0;
+
+  // another answer
+  // while文で1日ごとの高さを求めていく
+  // while (plant <= H) {
+  //   // cntの数だけ左シフト（2の累乗を表現）
+  //   plant += 1 << cnt;
+  //   cnt++;
+  // }
+  // cout << cnt << endl;
 }
