@@ -23,8 +23,10 @@ int main() {
 
   sort(total.begin(), total.end());
 
-  set<int> se(A.begin(), A.end());
+  // totalにAの要素が存在するかどうかをsetを使って判断する
+  set<int> se(A.begin(), A.end());  // setにAの要素を追加
   for (int i = 0; i < N + M - 1; i++) {
+    // 2連続でset要素に含まれていたらYesを表示してプログラム終了
     if (se.count(total.at(i)) && se.count(total.at(i + 1))) {
       cout << "Yes" << endl;
       return 0;
