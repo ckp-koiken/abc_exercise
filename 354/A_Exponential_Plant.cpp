@@ -22,7 +22,7 @@ int main() {
   // while文で1日ごとの高さを求めていく
   // while (plant <= H) {
   //   // cntの数だけ左シフト（2の累乗を表現）
-  //   plant += 1 << cnt;
+  //   plant += 1 << cnt; // plant = plant * 2 + 1でも良い
   //   cnt++;
   // }
   // cout << cnt << endl;
