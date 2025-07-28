@@ -26,6 +26,9 @@ int main() {
       }
     }
   }
+  // another answer
+  // sort()でも辞書順に並び替えてくれる
+  // sort(S.begin(), S.end());
 
   cout << S.at(mod) << endl;
 
