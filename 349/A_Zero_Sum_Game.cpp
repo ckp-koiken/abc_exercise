@@ -12,5 +12,6 @@ int main() {
   }
 
   cout << 0 - sum << endl;
+  // 単に-sumでも良い
   return 0;
 }
