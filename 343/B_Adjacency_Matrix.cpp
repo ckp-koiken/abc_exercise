@@ -10,7 +10,7 @@ int main() {
       cin >> A.at(i).at(j);
     }
   }
-
+  
   for (int i = 0; i < N; i++) {
     for (int j = 0; j < N; j++) {
       if (A.at(i).at(j) == 1) {
@@ -19,6 +19,22 @@ int main() {
     }
     cout << endl;
   }
+
+  // another answer
+  // 答えを収納するための配列を別に用意する
+  // 1行ずつ答えを出力
+  // for (int i = 0; i < N; i++) {
+  //   vector<int> v;
+  //   for (int j = 0; j < N; j++) {
+  //     if (A.at(i).at(j) == 1) {
+  //       v.push_back(j + 1);
+  //     }
+  //   }
+  //   for (int j = 0; j < v.size(); j++) {
+  //     cout << v.at(j) << " ";
+  //   }
+  //   cout << endl;
+  // }
 
   return 0;
 }
