@@ -42,3 +42,41 @@ int main() {
   printf("%.15lf\n", ans);
   return 0;
 }
+
+// another answer
+// 問題文通りに実装
+// int main() {
+//   string S;
+//   cin >> S;
+
+//   int n = S.size();
+
+//   double ans = 0;
+
+//   // 左から順番に見るループ
+//   // 2文字分離して探索
+//   for (int i = 0; i < n - 2; i++) {
+//     if (S.at(i) != 't') continue;
+
+//     // 右をみるループ
+//     for (int j = i + 2; j < n; j++) {
+//       if (S.at(j) != 't') continue;
+
+//       // 左端から右端までtの数を数える
+//       int x = 0;
+//       for (int ki = i; ki <= j; ki++) {
+//         if (S.at(ki) == 't') x++;
+//       }
+
+//       // 部分文字列の幅
+//       int len = j - i + 1;
+
+//       // 充填率を計算
+//       double tmp = (double)(x - 2)/ (double)(len - 2);
+//       ans = max(tmp, ans);
+//     }
+//   }
+
+//   printf("%.15lf\n", ans);
+//   return 0;
+// }
