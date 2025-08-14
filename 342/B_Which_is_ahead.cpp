@@ -35,3 +35,35 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// キューごとに対象となる人が前から何番目にいるのかを記録する
+// int main() {
+//   int n;
+//   cin >> n;
+//   vector<int> p(n);
+//   for (int i = 0; i < n; i++) {
+//     cin >> p.at(i);
+//   }
+
+//   // 前から何番目なのかを記録する配列
+//   vector<int> x(n + 1); // pは0より大きいので１個余分にバッファをとる
+//   for (int i = 0; i < n; i++) {
+//     x.at(p.at(i)) = i;
+//   }
+
+//   int q;
+//   cin >> q;
+
+//   // キューの番号2個を受け取って
+//   // xを参照し順番を比較する
+//   for (int qi = 0; qi < q; qi++) {
+//     int a, b;
+//     cin >> a >> b;
+//     if (x.at(a) < x.at(b)) {
+//       cout << a << endl;
+//     } else {
+//       cout << b << endl;
+//     }
+//   }
+// }
