@@ -13,6 +13,13 @@ int main() {
     }
   }
 
+  // another answer
+  // 1を1回出力して01をN回出力すればよい
+  // cout << "1";
+  // for (int i = 0; i < N; i++) {
+  //   cout << "01";
+  // }
+
   cout << endl;
   return 0;
 }
