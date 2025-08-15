@@ -4,6 +4,8 @@ using namespace std;
 int main() {
   int N;
   cin >> N;
+  // MEMO: Aの制約が10^9まで
+  // 換金の計算によってはintの幅を超えてしまうのでint64_tで確保する
   vector<int64_t> A(N);
   for (int i = 0; i < N; i++) {
     cin >> A.at(i);
@@ -16,6 +18,7 @@ int main() {
   }
 
   for (int i = 0; i < N - 1; i++) {
+    // 制約の関係でtmpもint64_tで
     int64_t tmp = A.at(i);
     tmp /= S.at(i);
     A.at(i) %= S.at(i);
