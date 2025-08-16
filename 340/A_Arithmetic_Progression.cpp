@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int A, B, D;
+  cin >> A >> B >> D;
+  
+  cout << A << " ";
+  for (;;) {
+    if (A == B) break;
+    A += D;
+    cout << A << " ";
+  }
+  cout << endl;
+  return 0;
+}
