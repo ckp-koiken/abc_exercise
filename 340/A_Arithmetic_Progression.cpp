@@ -11,6 +11,12 @@ int main() {
     A += D;
     cout << A << " ";
   }
+  // another answer
+  // for文をうまく使う
+  for (int n = A; n <= B; n += D) {
+    cout << n;
+  }
+
   cout << endl;
   return 0;
 }
