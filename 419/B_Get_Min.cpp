@@ -33,3 +33,31 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// priority_queueを使う
+// int main() {
+//   int Q;
+//   cin >> Q;
+
+//   // priority_queueのデフォルトは大きい順
+//   // 内部関数greater<int>を使って小さい順に作成
+//   priority_queue<int, vector<int>, greater<int>> ball;
+//   int num, x;
+
+//   for (int i = 0; i < Q; i++) {
+//     cin >> num;
+//     if (num == 1) {
+//       cin >> x;
+//       ball.push(x); // 追加
+//     }
+
+//     if (num == 2) {
+//       // 優先順位に従って取り出す
+//       cout << ball.top() << endl;
+//       // 優先順位に従って要素を削除
+//       ball.pop();
+//     }
+//   }
+//   return 0;
+// }
