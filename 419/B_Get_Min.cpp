@@ -24,6 +24,11 @@ int main() {
           break;
         }
       }
+      // another answer
+      // 配列の最小値を取るときmin_element()を使うと最小値のイテレータが返ってくる
+      // auto it = min_element(ball.begin(), ball.end());
+      // cout << *it << endl;
+      // ball.erase(it);  // eraseにイテレータを渡して当該要素を消す
     }
   }
   return 0;
