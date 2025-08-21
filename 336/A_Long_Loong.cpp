@@ -11,5 +11,13 @@ int main() {
   }
 
   cout << "ng" << endl;
+
+  // another answer
+  // 合体した文字列を作成する
+  // string s = "L";
+  // for (int i = 0; i < N; i++) s += "o";
+  // s += "ng";
+  // cout << s << endl;
+
   return 0;
 }
