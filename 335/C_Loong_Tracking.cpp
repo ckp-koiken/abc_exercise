@@ -69,3 +69,46 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// c++でdequeを使うと前に入ってきたものを前から出す処理を高速でできる
+// 配列を順番通り使って計算量が多くなる問題を防げる
+// int main() {
+//   int N, Q;
+//   cin >> N >> Q;
+
+//   // dequeを用意
+//   deque<P> ps;
+
+//   // 座標を追加
+//   // 逆順にする必要がない
+//   for (int i = 0; i < N; i++) {
+//     ps.emplace_back(i + 1, 0);
+//   }
+
+//   map<char, int> mp = {
+//     {'L', 0}, {'R', 2}, {'U', 3}, {'D', 1}
+//   };
+
+//   for (int qi = 0; qi < Q; qi++) {
+//     int type;
+//     cin >> type;
+//     if (type == 1) {
+//       char c;
+//       cin >> c;
+//       int v = mp[c];
+//       // 先頭要素を取り出す
+//       auto [x, y] = ps.at(0);
+//       // emplace_front()を使って前から追加する
+//       ps.emplace_front(x + dx[v], y + dy[v]);
+//     } else {
+//       int p;
+//       cin >> p;
+
+//       // 単純に前からの座標で参照
+//       auto [x, y] = ps.at(p - 1);
+//       cout << x << " " << y << endl;
+//     }
+//   }
+//   return 0;
+// }
