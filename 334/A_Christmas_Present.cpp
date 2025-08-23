@@ -10,5 +10,8 @@ int main() {
   } else {
     cout << "Glove" << endl;
   }
+
+  // 3項演算子を使っても良い
+  // cout << (B > G ? "Bat" : "Glove") << endl;
   return 0;
 }
