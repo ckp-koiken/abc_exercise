@@ -21,3 +21,29 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// 線分の長さは2通りしかない
+// 隣合った頂点同士の線分は短くて、そのほかは長い
+// 長いか短いかを判定すればよい
+
+// // x,yが隣り合ってるかどうかを返す関数
+// bool near(char x, char y) {
+//   if (x > y) swap(x, y);
+//   // x,yの差が1か4だったら隣り合っている
+//   return y - x == 1 or y - x == 4;
+// }
+
+// int main() {
+//   char a, b, c, d;
+//   cin >> a >> b >> c >> d;
+
+//   // 隣接状況が同じであれば長さは等しい
+//   if (near(a, b) == near(c, d)) {
+//     cout << "Yes" << endl;
+//   } else {
+//     cout << "No" << endl;
+//   }
+
+//   return 0;
+// }
