@@ -10,6 +10,8 @@ int main() {
     cin >> S.at(i);
   }
 
+  // 投票の結果0と1どちらが少数派かを記録
+  // 全く投票されない方がある場合、全ての人に1を加点
   vector<int> result(M);
   for (int j = 0; j < M; j++) {
     int x = 0;
@@ -30,6 +32,7 @@ int main() {
     }
   }
 
+  // 投票者ごとの得点を計算
   vector<int> player(N);
   for (int j = 0; j < M; j++) {
     for (int i = 0; i < N; i++) {
@@ -43,11 +46,13 @@ int main() {
     }
   }
 
+  // 最大得点を抽出
   int high = 0;
   for (int i = 0; i < N; i++) {
     high = max(high, player.at(i));
   }
 
+  // 最大得点にあたる人を昇順に表示
   for (int i = 0; i < N; i++) {
     if (player.at(i) == high) {
       cout << i + 1 << " ";
