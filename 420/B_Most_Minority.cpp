@@ -46,11 +46,41 @@ int main() {
     }
   }
 
+  // another answer
+  // resultを経由しないで最初からplayerに得点を追加していく方法もある
+  // vector<int> p_score(N);
+  // for (int j = 0; j < M; j++) {
+  //   int x = 0;
+  //   int y = 0;
+  //   for (int i = 0; i < N; i++) {
+  //     if (S.at(i).at(j) == '0') {
+  //       x++;
+  //     } else {
+  //       y++;
+  //     }
+  //   }
+  //   for (int i = 0; i < N; i++) {
+  //     if (S.at(i).at(j) == '0') {
+  //       if (x <= y) {
+  //         p_score.at(i)++;
+  //       }
+  //     } else {
+  //       if (x >= y) {
+  //         p_score.at(i)++;
+  //       }
+  //     }
+  //   }
+  // }
+
   // 最大得点を抽出
   int high = 0;
   for (int i = 0; i < N; i++) {
     high = max(high, player.at(i));
   }
+
+  // 最大得点を抽出する際にmax_elementを使うと楽
+  // イテレータが返ってくるので値を使う場合*を入れる
+  // int high = (*max_element(player.begin(), player.end()));
 
   // 最大得点にあたる人を昇順に表示
   for (int i = 0; i < N; i++) {
