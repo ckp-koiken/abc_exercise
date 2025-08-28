@@ -2,11 +2,10 @@
 using namespace std;
 
 int main() {
-  int N, S, M, L;
-  cin >> N >> S >> M >> L;
-
   // Nが最高100個なのでどのパックでも最高20個程度買えばいい
   // S, M, Lそれぞれについて0から20個買うことを全探索する
+  int N, S, M, L;
+  cin >> N >> S >> M >> L;
 
   // あらかじめansに大きい整数を入れておく
   int ans = 1000000000;
