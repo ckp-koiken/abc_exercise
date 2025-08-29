@@ -22,6 +22,14 @@ int main() {
     }
   }
 
+  // another answer
+  // 求める答えはmin(max(L, A.at(i)), R)
+  // std::clamp(A_i, L, R)を用いると便利
+  // 指定した変数を指定範囲内に収める
+  // for (int i = 0; i < n; i++) {
+  //   cout << clamp(a.at(i), l ,r);
+  // }
+
   cout << endl;
 
   return 0;
