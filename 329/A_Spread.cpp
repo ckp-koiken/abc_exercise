@@ -4,8 +4,12 @@ using namespace std;
 int main() {
   string S;
   cin >> S;
-  for (char c : S) {
-    cout << c << " ";
+
+  int n = (int)S.size();
+
+  for (int i = 0; i < n; i++) {
+    cout << S.at(i);
+    if (i != n - 1) cout << " ";
   }
 
   cout << endl;
