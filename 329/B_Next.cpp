@@ -13,6 +13,10 @@ int main() {
   for (int a : A) {
     max_num = max(max_num, a);
   }
+  // another answer
+  // 最大値を求めるときにmax_element()を使うと楽
+  // イテレータが返ってくるので値を使う場合*をつける
+  // int max_num = *max_element(A.begin(), A.end());
 
   int ans = 0;
   for (int a : A) {
