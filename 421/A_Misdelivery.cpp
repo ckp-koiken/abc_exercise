@@ -17,5 +17,8 @@ int main() {
   } else {
     cout << "No" << endl;
   }
+  
+  // 二項演算子で書いても良い
+  // cout << (S.at(X - 1) == Y ? "Yes" : "No") << endl;
   return 0;
 }
