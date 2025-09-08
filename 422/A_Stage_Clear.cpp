@@ -16,5 +16,15 @@ int main() {
     cout << i + 1 << "-" << 1 << endl;
   } 
 
+  // another answer
+  // 整数型に変換しなくても文字の数字にそのまま足し引きすればいい
+  // if (S.at(2) == '8') {
+  //   S.at(0)++;
+  //   S.at(2) = '1';
+  // } else {
+  //   S.at(2)++;
+  // }
+  // cout << S << endl;
+
   return 0;
 }
