@@ -18,5 +18,12 @@ int main() {
   } else if (!(is_prefix && is_suffix)) {
     cout << 3 << endl;
   }
+
+  // MEMO: 二項演算子で簡単に書ける
+  // if (is_prefix) {
+  //   cout << (is_suffix ? 0 : 1) << endl;
+  // } else {
+  //   cout << (is_suffix ? 2 : 3) << endl;
+  // }
   return 0;
 }
