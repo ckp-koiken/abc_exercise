@@ -13,7 +13,7 @@ int main() {
   // cin >> s;
 
   for (int i = 0; i < d - 1; i++) {
-    if (S[i] <= S[i + 1]) {
+    if (S.at(i) <= S.at(i + 1)) {
       cout << "No" << endl;
       return 0;
     }
