@@ -8,6 +8,10 @@ int main() {
   string S = to_string(N);
   int d = (int)S.size();
 
+  // MEMO: そのまま文字列として受け取ってもいい
+  // string s;
+  // cin >> s;
+  
   for (int i = 0; i < d - 1; i++) {
     if (S[i] <= S[i + 1]) {
       cout << "No" << endl;
