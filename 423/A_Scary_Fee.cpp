@@ -15,3 +15,19 @@ int main() {
   cout << ans << endl;
   return 0;
 }
+
+// another answer
+// 全探索でも書ける
+// int main() {
+//   int x, c;
+//   cin >> x >> c;
+
+//   int ans = 0;
+//   while (true) {
+//     int now = ans + 1000;
+//     if (now + now / 1000 * c > x) break;
+//     ans = now;
+//   }
+
+//   cout << ans << endl;
+// }
