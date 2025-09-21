@@ -16,5 +16,17 @@ int main() {
     }
   }
   cout << endl;
+
+  // another answer
+  // 問題番号の合計で解いたかどうか判定しなくても
+  // 単純に解いた問題の数をカウントすればもっと簡単に書ける
+  // for (int i = 0; i < K; i++) {
+  //   int a, b;
+  //   cin >> a >> b;
+  //   Q.at(a)++;
+  //   if (Q.at(a) == M) {
+  //     cout << a << " ";
+  //   }
+  // }
   return 0;
 }
