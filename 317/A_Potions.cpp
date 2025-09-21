@@ -12,6 +12,8 @@ int main() {
   int target = X - H;
   for (int i = 0; i < N; i++) {
     if (P.at(i) >= target) {
+      // X + P.at(i) >= X
+      // としてもよい
       cout << i + 1 << endl;
       return 0;
     }
