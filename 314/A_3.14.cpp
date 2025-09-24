@@ -13,5 +13,9 @@ int main() {
 
   cout << endl;
 
+  // another answer
+  // substrを使っても良い
+  // cout << s.substr(0, N + 2) << endl;
+
   return 0;
 }
