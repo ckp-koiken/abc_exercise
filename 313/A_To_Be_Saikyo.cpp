@@ -37,7 +37,7 @@ int main() {
 //   }
 
 //   // begin()+1として2番目要素から最後までの中で最大値を探す
-//   int max_p = *max_element(P.begin() + 1, P.end() + 1);
+//   int max_p = *max_element(P.begin() + 1, P.end());
 
 //   // P.at(0)が最強の場合0を、
 //   // それ以外のどれかが最強の場合差をとって1を足したものを表示
