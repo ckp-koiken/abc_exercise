@@ -24,3 +24,26 @@ int main() {
   
   return 0;
 }
+
+// another answer
+// setを使う
+// 文字列はABCのどれかで構成されているので
+// setの要素数が3になった時の文字数を表示する
+
+// int main() {
+//   int n;
+//   cin >> n;
+//   string s;
+//   cin >> s;
+
+//   set<char> se;
+//   for (int i = 0; i < n; i++) {
+//     se.insert(s.at(i));
+//     if (se.size() == 3) {
+//       cout << i + 1 << endl;
+//       return 0;
+//     }
+//   }
+
+//   return 0;
+// }
