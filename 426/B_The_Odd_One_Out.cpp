@@ -17,8 +17,8 @@ int main() {
   for (auto p : ma) {
     if (p.second == 1) {
       cout << p.first << endl;
-      return 0;
     }
   }
+
   return 0;
 }
