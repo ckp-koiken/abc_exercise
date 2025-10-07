@@ -20,5 +20,17 @@ int main() {
     cout << ma[p] - ma[q] << endl;
   }
 
+  // another answer
+  // 各文字間の距離が小さいので文字列で直接再現
+  // 出現位置を検索
+  // string p, q;
+  // cin >> p >> q;
+
+  // string s = "A..BC...DE....F........G";
+
+  // int p_pos = s.find(p);
+  // int q_pos = s.find(q);
+  // cout << abs(p_pos - q_pos) << endl;
+
   return 0;
 }
