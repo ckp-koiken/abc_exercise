@@ -23,3 +23,20 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// Nを文字列にする
+// Nの4文字目以降を0に変換すればよい
+// int main() {
+//   int n;
+//   cin >> n;
+//
+//   string s = to_string(n);
+//   // 4文字目以降なのでインデックスは3以降
+//   for (int i = 3; i < s.size(); i++) {
+//     s[i] = '0';
+//   }
+//
+//   cout << s << endl;
+//   return 0;
+// }
