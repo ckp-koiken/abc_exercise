@@ -27,5 +27,13 @@ int main() {
 
   cout << "Yes" << endl;
 
+  // another answer
+  // 似た文字列の判定を以下のようにも書ける
+  // bool string_sim = true;
+  // for (int i = 0; i < N; i++) {
+  //   string_sim &= is_similar(S[i], T[i]);
+  // }
+  // cout << (string_sim ? "Yes" : "No") << endl;
+
   return 0;
 }
