@@ -12,6 +12,18 @@ int sum_d(int x) {
   return cnt;
 }
 
+// another answer
+// 10で割るタイプの関数を定義してもよい
+// main関数内でラムダ式を使って実装してもよい
+// int sum_d(int x) {
+//   int res = 0;
+//   while (x) {
+//     res += x % 10;
+//     x /= 10;
+//   }
+//   return res;
+// }
+
 int main() {
   int N;
   cin >> N;
