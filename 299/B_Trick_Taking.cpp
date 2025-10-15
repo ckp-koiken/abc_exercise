@@ -36,3 +36,36 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// pairを使うとスマートに書ける
+// int main() {
+//   int n, t;
+//   cin >> n >> t;
+//   vector<int> c(n), r(n);
+//   // 添え字を1始まりにしておくとプレイヤー番号を表示するときに便利
+//   for (int i = 1; i <= n; i++) cin >> c[i];
+//   for (int i = 1; i <= n; i++) cin >> r[i];
+
+//   // カードの値と人の番号を管理するpairを作る
+//   // カード値がtの時とそうでないときで2パターン
+//   pair<int, int> tmax(-1, -1), lmax(-1, -1);
+
+//   // 配列を順番に見てtの時とそうでない時でカードの最大値とプレイヤー番号を更新
+//   for (int i = 1; i <= n; i++) {
+//     if (c[i] == t) tmax = max(tmax, pair<int, int>(r[i], i));
+//     if (c[i] == c[1]) lmax = max(lmax, pair<int, int>(r[i], i));
+//   }
+
+//   if (tmax.first != -1) {
+//     // tがカード値としてあるとき
+//     // tmax.firstが-1でないとき、tmaxからプレイヤー番号を表示
+//     cout << tmax.second << endl;
+//   } else {
+//     // tがカード値としてないとき
+//     // c[1]の最大値を求めるとき、（tmax.first == -1）lmaxからプレイヤー番号を表示
+//     cout << lmax.second << endl;
+//   }
+
+//   return 0;
+// }
