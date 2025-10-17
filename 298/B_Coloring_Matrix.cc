@@ -1,6 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// another answer
+// 回転を関数にするときれいに書ける
+// vector<vector<int>> rotate(vector<vector<int>> A) {
+//   int N = A.size();
+//   vector<vector<int>> res(N, vector<int>(N));
+//   for (int i = 0; i < N; i++) {
+//     for (int j = 0; j < N; j++) {
+//       res[i][j] = A[N - 1 - j][i];
+//     }
+//   }
+//   return res;
+// }
+
 int main() {
   int N;
   cin >> N;
@@ -49,6 +62,9 @@ int main() {
       }
     }
     A = tmp;
+
+    // another answer
+    // A = rotate(A);
 
   }
 
