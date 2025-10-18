@@ -47,3 +47,30 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// 文字ごとに配列をもつmapを作ると簡単に書ける
+// int main() {
+//   string s;
+//   cin >> s;
+
+//   // 文字とその文字が何番目にあるかを保存する配列を組にしたmap
+//   map<char, vector<int>> mp;
+//   for (int i = 0; i < 8; i++) {
+//     // 文字ごとに何番目に登場したかを配列に記録
+//     mp[s[i]].push_back(i);
+//   }
+
+//   bool ok = true;
+//   // 1つ目のBと2つ目のBの偶奇（２で割った余り）が異なるかどうかとokの論理積代入
+//   ok &= mp['B'][0] % 2 != mp['B'][1] % 2;
+
+//   // Kが２つのRに挟まれているかどうかとokの論理積代入
+//   ok &= mp['R'][0] < mp['K'][0] && mp['K'][0] < mp['R'][1];
+
+//   if (ok)
+//     cout << "Yes" << endl;
+//   else
+//     cout << "No" << endl;
+//   return 0;
+// }
