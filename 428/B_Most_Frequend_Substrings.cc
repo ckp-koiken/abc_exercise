@@ -14,6 +14,9 @@ int main() {
     } else {
       ma[tmp_s]++;
     }
+
+    // MEMO: mapは以下のように追加でも良い
+    // ma[tmp_s] += 1;
   }
 
   int freq = 0;
