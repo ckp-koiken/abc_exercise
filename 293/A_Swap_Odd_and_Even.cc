@@ -12,6 +12,12 @@ int main() {
     }
   }
 
+  // another answer
+  // 問題文通りの実装（添え字0始まり）
+  // for (int i = 0; i < n / 2; i++) {
+  //   swap(S[2 * i], S[2 * i + 1]);
+  // }
+
   cout << S << endl;
   return 0;
 }
