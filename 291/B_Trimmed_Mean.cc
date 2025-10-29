@@ -34,3 +34,24 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// sortして上下N要素を無視する
+// int main() {
+//   int n;
+//   cin >> n;
+//   vector<int> x(5 * n);
+//   for (int i = 0; i < 5 * n; i++) cin >> x[i];
+
+//   sort(x.begin(), x.end());
+
+//   double total = 0.0;
+
+//   // 上下それぞれn個を無視して合計
+//   // nから4nまで
+//   for (int i = n; i < 4 * n; i++) total += x[i];
+
+//   // 3n要素で割って平均をとる
+//   cout << total / ((double)(3 * n)) << endl;
+//   return 0;
+// }
