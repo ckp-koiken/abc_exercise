@@ -12,6 +12,8 @@ int main() {
   }
 
   set<vector<vector<char>>> se;
+
+  // MEMO: N-M+1の+1を見落としてミスっていた
   for (int i = 0; i < N - M + 1; i++) {
     for (int j = 0; j < N - M + 1; j++) {
       vector<vector<char>> tmp(M, vector<char>(M));
