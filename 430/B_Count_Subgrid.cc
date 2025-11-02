@@ -4,7 +4,14 @@ using namespace std;
 int main() {
   int N, M;
   cin >> N >> M;
+
+  // another answer
+  // char型の二次元配列はvector<string>で処理しても
+  // 同じように[i][j]でアクセスできるらしい
+  // vector<string> S(N);
+
   vector<vector<char>> S(N, vector<char>(N));
+
   for (int i = 0; i < N; i++) {
     for (int j = 0; j < N; j++) {
       cin >> S[i][j];
