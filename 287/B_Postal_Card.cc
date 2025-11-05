@@ -19,6 +19,10 @@ int main() {
   for (int i = 0; i < N; i++) {
     string tmp_s = S[i].substr(3);
 
+    // MEMO: 問題は「いずれかに一致するかどうか」なので
+    // bool変数で一致するかどうかを確認する
+    // 単に一致した個数だけ数えると二重カウントになる
+
     bool match = false;
     for (int j = 0; j < M; j++) {
       if (T[j] == tmp_s) {
