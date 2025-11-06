@@ -43,3 +43,26 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// p~qまでの区間とr~sまでの区間をそのまま取り換えることを考える
+// int main() {
+//   int n, p, q, r, s;
+//   cin >> n >> p >> q >> r >> s;
+//   vector<int> a(n);
+//   for (int i = 0; i < n; i++) cin >> a[i];
+
+//   // 添え字対策
+//   p--; q--; r--; s--;
+
+//   for (int i = p; i <= q; i++) {
+//     // 取り換え先はrにiがpから離れた距離を足せばよい
+//     int j = (i - p) + r;
+//     swap(a[i], a[j]);
+//   }
+
+//   for (int aa : a) cout << aa << " ";
+//   cout << '\n';
+
+//   return 0;
+// }
