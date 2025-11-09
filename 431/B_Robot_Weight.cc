@@ -9,7 +9,6 @@ int main() {
   cin >> Q;
 
   vector<bool> W_a(N);
-
   for (int i = 0; i < Q; i++) {
     int P;
     cin >> P;
