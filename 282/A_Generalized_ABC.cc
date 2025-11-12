@@ -7,6 +7,8 @@ int main() {
 
   string S;
   for (int i = 0; i < K; i++) {
+    // MEMO: char型の文字に直接iを足しても良い
+    // S.push_back(i + 'A');
     S.push_back(i + 65);
   }
 
