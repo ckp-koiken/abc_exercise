@@ -12,6 +12,10 @@ int main() {
     for (int j = 0; j < W; j++) {
       if (S[j] == '#') ans++;
     }
+
+    // another answer
+    // count関数を使う
+    // ans += count(S.begin(), S.end(), '#');
   }
 
   cout << ans << endl;
