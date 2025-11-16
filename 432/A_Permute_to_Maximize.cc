@@ -9,6 +9,8 @@ int main() {
 
   int ans = 0;
   sort(num.begin(), num.end());
+  // MEMO: sortして大きいものから順に3つ並べるだけでもOK
+  // cout << num[2] << num[1] << num[0] << endl;
 
   do {
     int tmp = 0;
