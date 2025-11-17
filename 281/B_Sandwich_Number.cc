@@ -19,7 +19,8 @@ int main() {
   
   mid = S.substr(1, 6);
   int mid_n = stoi(mid);
-  
+
+  // MEMO: >= 'A' && <= 'Z' でも良い
   if (!(first >= 65 && first <= 90)) {
     cout << "No" << endl;
     return 0;
@@ -33,7 +34,10 @@ int main() {
   if (!(mid_n >= 100000 && mid_n <= 999999)) {
     cout << "No" << endl;
     return 0;
-  }  
+  }
+  // MEMO: 真ん中7文字の数字をチェックして
+  // 7桁の数字がそれぞれ10進数のどれかであることを確認してもよい
+  // 1桁目（S[1]）が1以上であることがマスト
 
   cout << "Yes" << endl;
 
