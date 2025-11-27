@@ -18,5 +18,10 @@ int main() {
     }
   }
 
+  // another answer
+  // max_elementをつかう
+  // 最大要素のイテレータと先頭との距離から算出
+  // cout << max_element(H.begin(), H.end()) - H.begin() + 1 << endl;
+
   return 0;
 }
