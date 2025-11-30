@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int H, W;
+  cin >> H >> W;
+  vector<string> C(H);
+  for (int i = 0; i < H; i++) {
+    cin >> C[i];
+  }
+
+  for (int i = 0; i < W; i++) {
+    int X = 0;
+    for (int j = 0; j < H; j++) {
+      if (C[j][i] == '#') X++;
+    }
+    cout << X << " ";
+  }
+
+  cout << '\n';
+  return 0;
+}
