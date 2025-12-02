@@ -46,3 +46,34 @@ int main() {
   cout << (ans ? "Yes" : "No") << endl;
   return 0;
 }
+
+// another answer
+// 関数を作らずにstringから条件に該当するアルファベット・数字を探す
+// int main() {
+//   int n;
+//   cin >> n;
+//   vector<string> s(n);
+//   for (int i = 0; i < n; i++) cin >> s[i];
+  
+//   bool ans = true;
+
+//   // 自分と相異なるs文字列を比較
+//   for (int i = 0; i < n; i++) {
+//     for (int j = 0; j < i; j++) {
+//       if (s[i] == s[j]) ans = false;
+//     }
+
+//     // 文字列の条件
+//     string s1 = "HDCS";
+//     string s2 = "A23456789TJQK";
+//     // 2文字をcountによって判定
+//     for (int i = 0; i < n; i++) {
+//       if (!count(s1.begin(), s1.end(), s[i][0]) || !count(s2.begin(), s2.end(), s[i][1])) {
+//         ans = false;
+//       }
+//     }
+//   }
+//   cout << (ans ? "Yes" : "No") << endl;
+  
+//   return 0;
+// }
