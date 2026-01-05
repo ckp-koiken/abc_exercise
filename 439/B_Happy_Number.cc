@@ -76,3 +76,8 @@ int main() {
 //   cout << "Yes" << endl;
 //   return 0;
 // }
+
+// MEMO: history.count(n)の部分は
+// if (history.find(n) != history.end()) とも書ける
+// .find(n)はnを探してその場所のイテレータを返す
+// nが見つからなかったら.end()を返す
