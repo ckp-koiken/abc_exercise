@@ -12,18 +12,18 @@ int main() {
   // 原点から(a,b)までを結ぶ線分の角度θは三角関数の逆関数を使うことで求められる
   // c++や多くのプログラミング言語ではatan2(y,x)で求めることができる
   double r = hypot(a, b);
-  double theata = atan2(b, a);
+  double theta = atan2(b, a);
 
   // 角度θをd度増やす
   // c++では角度を弧度法（ラジアン）で扱うが問題では度数法で与えられている
   // 度数法から弧度法に変換する d(rad) = d * pi / 180
   // piを求める時、c++ではacos(-1.0)を使うと正確(M_PIは環境依存なので使わない)
   // cos(pi) = -1 -> \acos(-1) = pi
-  theata += d * acos(-1.0) / 180.0;
+  theta += d * acos(-1.0) / 180.0;
 
   // 距離r=1のとき、角度θのx,y座標はsinθ,cosθの定義そのもの
-  double x = cos(theata) * r;
-  double y = sin(theata) * r;
+  double x = cos(theta) * r;
+  double y = sin(theta) * r;
 
   cout << fixed << setprecision(10) << x << ' ' << y << endl;
   return 0;
