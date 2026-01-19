@@ -32,3 +32,52 @@ int main() {
 
   return 0;
 }
+
+// another answer
+// 該当する文字の数を数えるのは問題の本旨ではない
+// その文字が含まれていなければその言語ではないことを利用する
+
+/*
+int main() {
+  int n, m, q;
+  string s, t;
+  cin >> n >> m >> s >> t >> q;
+
+  for (int qi = 0; qi < q; qi++) {
+    string w;
+    cin >> w;
+
+    // Takahashi語であるか判定
+    bool Takahashi = true;
+    for (char c : w) {
+      // cをfindして最後までカウントしていたらTakahashi語ではない
+      if (find(s.begin(), s.end(), c) == s.end()) {
+      // if (s.find(c) == string::npos) { // このfindでも可
+        Takahashi = false;
+      }
+    }
+
+    // Aoki語であるか判定
+    bool Aoki = true;
+    for (char c : w) {
+      // cをfindして最後までカウントしていたらAoki語ではない
+      if (find(t.begin(), t.end(), c) == t.end()) {
+      // if (t.find(c) == string::npos) { // このfindでも可
+        Aoki = false;
+      }
+    }
+
+    // 両方とも満たしていたらUnknown
+    // 片方ならそれに応じて表示
+    if (Takahashi && Aoki) {
+      cout << "Unknown" << endl;
+    } else if (Takahashi) {
+      cout << "Takahashi" << endl;
+    } else {
+      cout << "Aoki" << endl;
+    }
+
+  }
+  return 0;
+}
+*/
