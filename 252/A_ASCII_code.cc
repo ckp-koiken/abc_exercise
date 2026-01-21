@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  char N;
+  int N;
   cin >> N;
 
   cout << (char)N << endl;
