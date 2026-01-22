@@ -32,6 +32,16 @@ int main() {
     }
   }
 
+  // another answer
+  // おいしさ最大値(yummy)の添え字を全て列挙しなくても
+  // Bを添え字として使ってあげれば楽に書ける
+  // for (int b : B) {
+  //   if (A[b  - 1] == yummy) {
+  //     cout << "Yes" << endl;
+  //     return 0;
+  //   }
+  // }
+
   cout << "No" << endl;
 
   return 0;
