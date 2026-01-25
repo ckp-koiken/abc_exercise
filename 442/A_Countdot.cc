@@ -10,5 +10,9 @@ int main() {
   }
 
   cout << ans << endl;
+
+  // another answer
+  // iとjの数を数え上げてもよい
+  // cout << count(S.begin(), S.end(), 'i') + count(S.begin(), S.end(), 'j') << endl;
   return 0;
 }
