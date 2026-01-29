@@ -15,5 +15,12 @@ int main() {
     A *= K;
     cnt++;
   }
+
+  // another answer
+  // 無限ループにしなくてもwhileの条件をA >= Bにしてもよい
+  // while (A >= B) {
+  //   A *= K;
+  //   cnt++;
+  // }
   return 0;
 }
