@@ -17,8 +17,8 @@ int main() {
   }
 
   // another answer
-  // 無限ループにしなくてもwhileの条件をA >= Bにしてもよい
-  // while (A >= B) {
+  // 無限ループにしなくてもwhileの条件をA < Bにしてもよい
+  // while (A < B) {
   //   A *= K;
   //   cnt++;
   // }
