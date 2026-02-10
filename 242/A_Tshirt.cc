@@ -15,6 +15,6 @@ int main() {
     ans = 0;
   }
 
-  printf("%.10f\n", ans);
+  printf("%.10lf\n", ans);
   return 0;
 }
