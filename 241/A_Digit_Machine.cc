@@ -10,5 +10,14 @@ int main() {
   int third = a[second];
 
   cout << third << endl;
+
+  // another answer
+  // numを更新し続けてfor文でも良い
+  // int num = 0;
+  // for (int i = 0; i < 3; i++) {
+  //   num = a[num];
+  // }
+
+  // cout << num << endl;
   return 0;
 }
