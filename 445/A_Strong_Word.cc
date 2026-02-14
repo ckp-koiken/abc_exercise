@@ -5,6 +5,8 @@ int main() {
   string S;
   cin >> S;
 
+  // memo:
+  // S[0]はS.front()でもよい
   if (S[0] == S.back()) {
     cout << "Yes" << endl;
   } else {
