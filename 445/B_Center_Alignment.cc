@@ -31,6 +31,17 @@ int main() {
     cout << '\n';
   }
 
+  // another answer
+  // string()関数を使って文字列を作っても良い
+  // for (int i = 0; i < N; i++) {
+  //   int k =  (m - (int)S[i].size()) / 2;
+
+  //   // .をk個分+S[i]+.をk個分で合体
+  //   // string(k, '.')で.をk個用意
+  //   string T = string(k, '.') + S[i] + string(k, '.');
+
+  //   cout << T << endl;
+  // }
   
   return 0;
 }
