@@ -19,5 +19,13 @@ int main() {
 
   cout << "No" << endl;
 
+  // another answer
+  // a < bの制約から、b-a==1 || b-a==9 としても良い
+  // if (b - a == 1 || b - a == 9) {
+  //   cout << "Yes" << endl;
+  // } else {
+  //   cout << "No" << endl;
+  // }
+
   return 0;
 }
