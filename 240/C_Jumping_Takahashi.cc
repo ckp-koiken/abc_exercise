@@ -59,3 +59,52 @@ int main() {
 
   return 0;
 }
+
+/*
+// another answer
+// dpで解く方法もある
+// ジャンプして行ける箇所からなら、その次にジャンプして移動する場所も行ける
+// 漸化式みたいに行ける箇所を埋めていく方法
+// 総当たりしなくて良いので計算量が少なくて済む
+int main() {
+  int n, X;
+  cin >> n >> X;
+
+  vector<int> a, b;
+  a = vector<int>(n);
+  b = vector<int>(n);
+  for (int i = 0; i < n; i++) {
+    cin >> a[i] >> b[i];
+  }
+
+  // ジャンプの回数とXの地点にいるかどうかを管理する配列dpを用意する
+  // nは0~nまでなのでn+1
+  // X地点は0~XなのでX+1だが、dpによって配列外参照する可能性があるので余分に確保する
+  // X+a[i]かX+b[i]でXを超えてしまうかも
+  vector<vector<bool>> dp(n + 1, vector<bool>(X + 101, false));
+
+  // 初期位置0,0はtrue
+  dp[0][0] = true;
+
+  // trueの箇所から1回ジャンプしてaかbだけ移動したところもtrueである
+  // 配列dpのtrueの場所から端を発してジャンプの回数と移動したところをtrueで埋めていく
+  for (int i = 0; i < n; i++) {
+    for (int x = 0; x < X + 1; x++) {
+      if (dp[i][x]) {
+        dp[i + 1][x + a[i]] = true;
+        dp[i + 1][x + b[i]] = true;
+      }
+    }
+  }
+
+  // dp配列をn回ジャンプしてXに到達できるかを確認
+  if (dp[n][X]) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
+
+  return 0;
+
+}
+*/
