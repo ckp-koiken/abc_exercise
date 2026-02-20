@@ -18,5 +18,11 @@ int main() {
     cout << X / 10 << endl;
   }
   
+  // another answer
+  // 剰余演算子%を使う
+  // 切り上げが発生するのはa % bが負の時のみ
+  // 余りが負の時に商を-1すれば良い
+  // cout << X / 10 - (X % 10 < 0) << endl;
+
   return 0;
 }
