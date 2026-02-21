@@ -12,5 +12,13 @@ int main() {
   }
   
   cout << '\n';
+
+  // another answer
+  // 文字列を連結して答えの文字列を作ってから答える
+  // string ans = S;
+  // ans[0] = tolower(ans[0]);
+  // ans = "Of" + ans;
+
+  // cout << ans << endl;
   return 0;
 }
