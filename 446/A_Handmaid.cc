@@ -5,6 +5,8 @@ int main() {
   string S;
   cin >> S;
   
+  // MEMO: tolower()は整数を返すので
+  // 文字として表示したい場合はchar型に変換が必要
   cout << "Of" << static_cast<char>(tolower(S[0]));
   
   for (int i = 1; i < (int)S.size(); i++) {
