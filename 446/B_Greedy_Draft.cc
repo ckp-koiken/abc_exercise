@@ -8,6 +8,11 @@ int main() {
   // 選ばれたジュースを管理するset
   set<int> se;
   
+  // another answer
+  // 選ばれたジュースを管理するbool型の配列を用意するのでもよい
+  // 大きさをM+1として0~M番とする（添え字対策）
+  // vector<bool> juice(M + 1);
+  
   for (int i = 0; i < N; i++) {
     int L;
     cin >> L;
@@ -28,10 +33,22 @@ int main() {
         k = X[j];
         break;
       }
+      
+      // another ans
+      // juice配列のX[j]にフラグが立っていなければそれをkに
+      // if (!juice[X[j]]) {
+      //   k = X[j];
+      //   break;
+      // }
+      
     }
     
     cout << k << endl;
     se.insert(k);
+    
+    // another ans
+    // 選ばれたジュースにフラグを立てる
+    // juice[k] = true;
     
   }
   return 0;
