@@ -28,5 +28,14 @@ int main() {
 
   cout << '\n';
   
+  // another answer
+  // 直接Sの該当文字を入れ替えてもよい
+  // a--, b--;
+  // char tmp = S[a];
+  // S[a] = S[b];
+  // S[b] = tmp;
+
+  // cout << S << endl;
+
   return 0;
 }
