@@ -18,6 +18,12 @@ int main() {
     }
   }
 
+  // memo:
+  // if文の条件をwhile文の条件にするとスマート
+  // while ((H[pos] < H[pos + 1]) && (pos != (N - 1))) {
+  //   pos++;
+  // }
+
   cout << H[pos] << endl;
   return 0;
 }
