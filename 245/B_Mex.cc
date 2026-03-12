@@ -23,3 +23,41 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// 0から順番に数が配列Aの中にあるかどうかを確認する
+// あったらtrue、なかったらfalseの状態にして
+// falseだったときその数を出力して終了する
+/*
+int main() {
+  int n;
+  cin >> n;
+  vector<int> a(n);
+  for (int i = 0; i < n; i++) cin >> a[i];
+
+  // 0から順番に数を確認するための変数x
+  int x = 0;
+
+  // 無限ループ
+  while (true) {
+    // 数の有無を示すbool変数。初期値はfalse。
+    bool exist = false;
+
+    // 配列Aを全て見ていってAの中にxがあればtrueに
+    for (int i = 0; i < n; i++) {
+      if (a[i] == x) exist = true;
+    }
+
+    // falseのままであれば配列Aにその数がないということ
+    // xを出力して終了
+    if (!exist) {
+      cout << x << endl;
+      return 0;
+    }
+
+    // xをインクリメント
+    x++;
+  }
+  return 0;
+}
+*/
