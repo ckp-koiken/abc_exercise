@@ -4,6 +4,9 @@ using namespace std;
 int main() {
   int N;
   cin >> N;
+
+  // memo: 2次元のvectorを指定しているがxの配列とyの配列をそれぞれ用意しても良い
+  // その場合x[i]-x[j]、y[i]-y[j]で距離を出す
   vector<vector<double>> data(N, vector<double>(2));
   for (int i = 0; i < N; i++) {
     for (int j = 0; j < 2; j++) {
@@ -26,7 +29,8 @@ int main() {
     }
   }
 
-  cout << setprecision(15) << sqrt(dist) << endl;
+  // memo: fixedを指定すると小数点以下の桁指定になる
+  cout << fixed << setprecision(15) << sqrt(dist) << endl;
 
   return 0;
 }
