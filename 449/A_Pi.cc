@@ -9,6 +9,11 @@ int main() {
 
   double ans = PI * (D / 2) * (D / 2);
 
+  // MEMO: cmathライブラリのM_PIを使っても良い
+  // double ans = M_PI * (D / 2) * (D / 2);
+  // 上をまとめてもOK
+  // double ans = M_PI * D * D / 4;
+
   cout << fixed << setprecision(10) << ans << endl;
   return 0;
 }
