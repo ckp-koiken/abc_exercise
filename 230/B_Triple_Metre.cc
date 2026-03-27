@@ -23,5 +23,14 @@ int main() {
   }
 
   cout << "No" << endl;
+
+  // another answer
+  // 文字列探索はfindを使うのでも良い
+  // if (T.find(S) != string::npos) {
+  //   cout << "Yes" << endl;
+  // } else {
+  //   cout << "No" << endl;
+  // }
+
   return 0;
 }
