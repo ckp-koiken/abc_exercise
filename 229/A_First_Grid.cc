@@ -13,5 +13,15 @@ int main() {
     cout << "Yes" << endl;
   }
 
+  // another answer
+  // 文字列なので".#"、"#."と"#."、".#"を直接探してNoにしてもよい
+  // if (S1 == "#." && S2 == ".#") {
+  //   cout << "No" << endl;
+  // } else if (S1 == ".#" && S2 == "#.") {
+  //   cout << "No" << endl;
+  // } else {
+  //   cout << "Yes" << endl;
+  // }
+
   return 0;
 }
