@@ -12,6 +12,9 @@ int main() {
   } else {
     cout << "No" << endl;
   }
-  
+
+  // 3項演算子を使うのでもよい
+  // cout << (n % 5 == 0 ? "Yes" : "No") << endl;
+
   return 0;
 }
