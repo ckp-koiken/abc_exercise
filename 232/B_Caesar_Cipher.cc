@@ -6,11 +6,15 @@ int main() {
   cin >> S >> T;
   int n = (int)S.size();
   
+  // アルファベットを同じ数だけ動かせばSからTに変換できるかチェック
+  // memo: vectorではなくてsetでもよい
   vector<int> check;
+  // set<int> check;
   
   for (int i = 0; i < n; i++) {
     int diff = (T[i] - S[i] + 26) % 26;
     check.push_back(diff);
+    // check.insert(diff);
   }
   
   int m = (int)check.size();
@@ -20,6 +24,12 @@ int main() {
       return 0;
     }
   }
+  
+  // if (check.size() == 1) {
+  //   cout << "Yes" << endl;
+  // } else {
+  //   cout << "No" << endl;
+  // }
   
   cout << "Yes" << endl;
   return 0;
