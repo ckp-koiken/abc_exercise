@@ -10,6 +10,8 @@ int main() {
   vector<int> B;
   for (int i = 0; i < N - 1; i++) {
     B.push_back(A[i]);
+    // ケアレスミスミス注意
+    // 絶対値が1より大きいのが条件（!= 2 ではない）
     if (abs(A[i] - A[i + 1]) > 1) {
       if (A[i] < A[i + 1]) {
         int diff = A[i + 1] - A[i];
