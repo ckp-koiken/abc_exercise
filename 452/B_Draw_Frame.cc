@@ -29,5 +29,20 @@ int main() {
     }
     cout << '\n';
   }
+
+  // another answer
+  // (i, j)が端であることはi=1, i=H, j=1, j=Wのいずれか
+  // この通りに文字を決めて出力してもよい
+  // for (int i = 0; i < H; i++) {
+  //   for (int j = 0; j < W; j++) {
+  //     if (i == 0 || i == H - 1 || j == 0 || j == W - 1) {
+  //       cout << '#';
+  //     } else {
+  //       cout << '.';
+  //     }
+  //   }
+  //   cout << '\n';
+  // }
+
   return 0;
 }
