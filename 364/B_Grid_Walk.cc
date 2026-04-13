@@ -11,6 +11,9 @@ int main() {
 
   si--, sj--;
 
+  // MEMO:
+  // やり方は合ってるのに進行方向と境界のチェックが全部逆だった
+  // 気をつけよう
   for (char xx : x) {
     if (xx == 'L') {
       int ti = si, tj = sj - 1;
