@@ -22,8 +22,8 @@ int main() {
 
   // 辞書順最小値と最大値を求める
   // 文字列ベクトルなので最小値と最大値を求めると辞書順で返ってくる
-  cout << *min_element(v.begin(), v.end()) << endl;;
-  cout << *max_element(v.begin(), v.end()) << endl;;
+  cout << *min_element(v.begin(), v.end()) << endl;
+  cout << *max_element(v.begin(), v.end()) << endl;
 
   return 0;
 }
