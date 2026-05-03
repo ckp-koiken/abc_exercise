@@ -8,6 +8,10 @@ int main() {
   for (int i = 0; i < 6; i++) cin >> dice_2[i];
   vector<int> dice_3(6);
   for (int i = 0; i < 6; i++) cin >> dice_3[i];
+  // memo:
+  // 2次元配列を作っても良い
+  // vector<<vector<int> dice(3, vector<int>(6));
+  // その場合for文ではdice[0][i], dice[1][i], dice[2][i]のループとする
 
   int cnt = 0;
   for (int i = 0; i < 6; i++) {
