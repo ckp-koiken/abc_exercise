@@ -16,5 +16,21 @@ int main() {
     cout << ma[c - '0'];
   }
   cout << '\n';
+
+  // another answer
+  // mapではなくvectorでもよい
+  // vector<string> S(3);
+  // string T;
+  // for (string& s : S) {
+  //   cin >> s;
+  // }
+  // cin >> T;
+  // string ans;
+
+  // for (char t : T) {
+  //   ans += S[t - '1'];
+  // }
+
+  // cout << ans << endl;
   return 0;
 }
