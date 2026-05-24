@@ -13,5 +13,11 @@ int main() {
 
   cout << '\n';
 
+  // another answer
+  // X文字目を削除しても良い
+  // S.erase()で削除位置をイテレータで渡す
+  // S.erase(S.begin() + X - 1);
+  // cout << S << endl;
+
   return 0;
 }
