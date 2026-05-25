@@ -37,3 +37,26 @@ int main() {
   cout << C << endl;
   return 0;
 }
+
+// another answer
+// if文の分岐を増やすと書く量が多くて大変
+// 文字を数字に一致させる方法として配列を用いると楽
+// int main() {
+//   // アルファベットと変換先の数字の対応表（配列）を作っておく
+//   string StoC = "22233344455566677778889999";
+//   int n;
+//   string ans;
+
+//   cin >> n;
+//   for (int i = 0; i < n; i++) {
+//     string s;
+//     cin >> s;
+
+//     // 文字列sの1文字目と'a'との距離で対応表を参照
+//     // 該当する数字を連結できる
+//     ans += StoC[s[0] - 'a'];
+//   }
+
+//   cout << ans << endl;
+//   return 0;
+// }
