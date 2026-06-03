@@ -17,6 +17,18 @@ int main() {
     }
   }
 
+  // another answer
+  // for文の書き方を工夫できる
+  // aの上限をSとしてa+b, a+b+cの上限をSとしてb、cを動かせば
+  // 1つ目の条件をfor文内で検証できる
+  // for (int a = 0; a <= S; a++) {
+  //   for (int b = 0; a + b <= S; b++) {
+  //     for (int c = 0; a + b + c <= S; c++) {
+  //       if (a * b * c <= T) ans++;
+  //     }
+  //   }
+  // }
+
   cout << ans << endl;
   return 0;
 }
