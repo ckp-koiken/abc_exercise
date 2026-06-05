@@ -5,6 +5,11 @@ long long sq(long long x) {
   return x * x;
 }
 
+// 2円の中心距離をDとして2円が共有点を持つ条件は
+// |r1 - r2| <= D <= R1 + R2
+// |r1 - r2| <= \sqrt((x1-x2)^2 + (y1-y2)^2) <= R1 + R2
+// ルートを取ると誤差が出るので2乗したもので検証
+// 大きい数値を2乗する関数を作っておくと便利
 int main() {
   int T;
   cin >> T;
@@ -22,6 +27,6 @@ int main() {
       cout << "No" << endl;
     }
   }
-  
+
   return 0;
 }
