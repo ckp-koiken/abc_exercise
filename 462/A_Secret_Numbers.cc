@@ -13,5 +13,14 @@ int main() {
   }
 
   cout << T << endl;
+
+  // another answer
+  // isdigit()を使うともっと簡単
+  // for (char c : S) {
+  //   if (isdigit(c)) {
+  //     cout << c;
+  //   }
+  // }
+  // cout << '\n';
   return 0;
 }
