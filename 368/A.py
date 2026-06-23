@@ -3,6 +3,8 @@ A = list(map(int, input().split()))
 
 under = A[-K:]
 over = A[0 :(N - K)]
+# 上からN-K要素は-Kで表しても良い
+# over = A[:-K]
 
 deck = under + over
 
