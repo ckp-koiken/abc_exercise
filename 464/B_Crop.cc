@@ -46,3 +46,38 @@ int main() {
   }
   return 0;
 }
+
+// another answer
+// すべての黒いピクセルが含まれるような最小の長方形を考えて
+// その範囲のみを出力する
+// int main() {
+//   int H, W;
+//   cin >> H >> W;
+//   vector<string> C(H);
+//   for (int i = 0; i < H; i++) cin >> C[i];
+
+//   // 最小範囲を絞っていく
+//   // 上下左右で最大値を代入
+//   int u = H, d = -1;
+//   int l = W, r = -1;
+
+//   for (int i = 0; i < H; i++) {
+//     for (int j = 0; j < W; j++) {
+//       // #のマスが存在したら最小の範囲を
+//       // u,d,l,rに代入して更新していく
+//       if (C[i][j] == '#') {
+//         u = min(u, i); d = max(d, i);
+//         l = min(l, j); r = max(r, j);
+//       }
+//     }
+//   }
+
+//   // u,d,l,rの範囲だけを表示する
+//   for (int i = u; i <= d; i++) {
+//     for (int j = l; j <= r; j++) {
+//       cout << C[i][j];
+//     }
+//     cout << '\n';
+//   }
+//   return 0;
+// }
