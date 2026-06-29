@@ -12,5 +12,10 @@ int main() {
   } else {
     cout << 0 << endl;
   }
+
+  // another answer
+  // 場合分けをしないで書くこともできる
+  // cout << max(0, B - A + 1) << endl;
+
   return 0;
 }
