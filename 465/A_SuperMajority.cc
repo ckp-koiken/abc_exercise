@@ -9,6 +9,9 @@ int main() {
   } else {
     cout << "No" << endl;
   }
-  
+
+  // another answer
+  // (double)A > (double)B * 2/ 3
+  // のようにして正攻法にdouble型にする方法もある
   return 0;
 }
