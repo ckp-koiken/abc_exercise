@@ -19,6 +19,16 @@ int main() {
     ans += fee[i];
   }
 
+  // another answer
+  // 配列を使わなくても単純にその時間の料金を足せばよい
+  // for (int i = A; i < B; i++) {
+  //   if (i >= L && i < R) {
+  //     ans += X;
+  //   } else {
+  //     ans += Y;
+  //   }
+  // }
+
   cout << ans << endl;
   return 0;
 }
