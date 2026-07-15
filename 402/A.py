@@ -1,7 +1,9 @@
 S = input()
 
+T = ""
+
 for i in S:
     if (i.isupper()):
-        print(i, end="")
+        T += i
 
-print()
+print(T)
