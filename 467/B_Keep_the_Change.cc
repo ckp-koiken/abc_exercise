@@ -16,8 +16,15 @@ int main() {
     Y += (B - A);
 
     if (S == "take") X += (B - A);
+
+    // another answer
+    // おつりを受け取らなかったとき（keep）のときに損をした分を
+    // 合計してもよい
+    // int ans = 0;
+    // if (S == "keep") ans += (B - A);
   }
 
   cout << Y - X << endl;
+  // cout << ans << endl;
   return 0;
 }
