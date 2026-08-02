@@ -9,6 +9,7 @@ int main() {
   int cnt = 0;
 
   for (int i = 0; i < N; i++) {
+    // MEMO: 3条件をbool型の変数に代入してif文を書くと見やすい
     if ((S[i] == 'o') || ((i - 1) >= 0 && S[i - 1] == 'o') ||
         ((i + 1) <= N - 1 && S[i + 1] == 'o'))
       cnt++;
