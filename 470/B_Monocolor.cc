@@ -18,5 +18,15 @@ int main() {
   }
 
   cout << ans << endl;
+
+  // another answer
+  // ボールの個数から最も多い色の数を引いたものでもよい
+  // vector<int> cnt(N);
+  // for (int i = 0; i < N; i++) {
+  //   cnt[C[i] - 1]++;
+  // }
+
+  // cout << N - *max_element(cnt.begin(), cnt.end()) << endl;
+
   return 0;
 }
