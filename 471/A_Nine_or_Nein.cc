@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int A, B;
+  cin >> A >> B;
+
+  if ((A + B) == 9 || (A - B) == 9 || (A * B) == 9 || ((A / B) == 9 && (A % B) == 0)) {
+    cout << "Nine" << endl;
+  } else {
+    cout << "Nein" << endl;
+  }
+  
+  return 0;
+}
